@@ -1,0 +1,9 @@
+<Alloy>
+    <Collection src="webNews" />
+    <Window id='win'>
+        <TableView dataCollection="webNews" dataFilter="filterFunction">
+            <TableViewRow title="{id}" /> 
+        </TableView>
+		
+    </Window> 
+</Alloy>

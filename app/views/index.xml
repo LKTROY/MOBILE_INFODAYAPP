@@ -1,0 +1,46 @@
+<Alloy>
+ <Collection src="webNews"/>
+	<TabGroup>
+
+		<Tab title="Tab 1" icon="KS_nav_ui.png">
+			<Window title="Tab 1">
+				<TableView dataCollection="webNews" dataTransform="transformFunction">
+					<TableViewRow layout="vertical">
+						<Label text="{id}" bottom=20 />
+						<Label text="{name}" bottom=20 />
+						<Label text="{class}" bottom=20 />
+						<Label text="{price}" bottom=20 />
+						<Label text="{commment}" bottom=20 /> 
+					</TableViewRow>
+				</TableView>
+			</Window>
+		</Tab>
+
+		<Tab title="Tab 2" icon="KS_nav_views.png">
+			<Window title="Tab 2">
+				<TableView onClick="tableClick"> 
+					<TableViewSection headerTitle="Business Class">
+						<TableViewRow title="Under $7000" dept_id="comp" hasChild=true classtype="business" price="7000" actiontype="<"/> 
+						<TableViewRow title="Above $7000" dept_id="comp" hasChild=true />
+					</TableViewSection>
+					<TableViewSection headerTitle="Economy Class">
+						<TableViewRow title="Under $7000" dept_id="coms" hasChild=true />
+						<TableViewRow title="Above $7000" dept_id="coms" hasChild=true />
+					</TableViewSection> 
+				</TableView>
+			</Window>
+		</Tab>
+
+		<Tab id='mapView' title="Tab 1" icon="KS_nav_ui.png">
+			<Window title="Tab 1">
+				<Module id="mapView" module="ti.map" method="createView" userLocation=true onClick="mapClicked">
+				<Annotation id='acHall' />
+				<Annotation id='waiHang' />
+				<Button title="Move" bottom=10 onClick="btClick" />
+				</Module>
+			</Window>
+			
+		</Tab>
+		
+	</TabGroup>
+</Alloy>
