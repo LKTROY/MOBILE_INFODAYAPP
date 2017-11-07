@@ -1,4 +1,5 @@
 $.index.open();
+Alloy.Globals.tabGroup=$.index;
 function btClick(e) { 
     $.mapView.region = {
         latitude : 22.339468, 
@@ -9,7 +10,7 @@ function btClick(e) {
 };
 function tableClick(e) { 
     
-    var eventListController = Alloy.createController('eventList', {dept_id: e.row.dept_id});
+    var eventListController = Alloy.createController('eventList', {dept_id: e.row.dept_id, classtype: e.row.classtype, price: e.row.price, actiontype: e.row.actiontype});
     
     $.index.activeTab.open(eventListController.getView());
 };

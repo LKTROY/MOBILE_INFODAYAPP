@@ -1,0 +1,10 @@
+<Alloy>
+	<Collection src="events" />
+	<Window title="Tab 1">
+				<Module id="mapView" module="ti.map" method="createView" userLocation=true onClick="mapClicked">
+				<Annotation id='acHall' latitude='22.341072' longitude='114.179645' title="AC Hall" subtitle="Correct Position"/>
+				<Annotation id='waiHang' />
+				<Button title="Move" bottom=10 onClick="btClick" />
+				</Module>
+	</Window>
+</Alloy>

@@ -20,12 +20,12 @@
 			<Window title="Tab 2">
 				<TableView onClick="tableClick"> 
 					<TableViewSection headerTitle="Business Class">
-						<TableViewRow title="Under $7000" dept_id="comp" hasChild=true classtype="business" price="7000" actiontype="<"/> 
-						<TableViewRow title="Above $7000" dept_id="comp" hasChild=true />
+						<TableViewRow title="Under $7000" dept_id="Business" hasChild=true classtype="business" price="7000" actiontype="1"/> 
+						<TableViewRow title="Above $7000" dept_id="Business" hasChild=true classtype="business" price="7000" actiontype="2"/>
 					</TableViewSection>
 					<TableViewSection headerTitle="Economy Class">
-						<TableViewRow title="Under $7000" dept_id="coms" hasChild=true />
-						<TableViewRow title="Above $7000" dept_id="coms" hasChild=true />
+						<TableViewRow title="Under $7000" dept_id="Economy" hasChild=true classtype="economy" price="7000" actiontype="1"/>
+						<TableViewRow title="Above $7000" dept_id="Economy" hasChild=true classtype="economy" price="7000" actiontype="2"/>
 					</TableViewSection> 
 				</TableView>
 			</Window>
@@ -34,7 +34,7 @@
 		<Tab id='mapView' title="Tab 1" icon="KS_nav_ui.png">
 			<Window title="Tab 1">
 				<Module id="mapView" module="ti.map" method="createView" userLocation=true onClick="mapClicked">
-				<Annotation id='acHall' />
+				<Annotation id='acHall' latitude='22.341072' longitude='114.179645' title="AC Hall" subtitle="Correct Position"/>
 				<Annotation id='waiHang' />
 				<Button title="Move" bottom=10 onClick="btClick" />
 				</Module>

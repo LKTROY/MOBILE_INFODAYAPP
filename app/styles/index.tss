@@ -34,12 +34,6 @@
         longitudeDelta: 0.006
     }
 }
-"#acHall": {
-    latitude: 22.341072,
-    longitude: 114.179645, 
-    title: "AC Hall",
-    subtitle: "香港浸會大學大學會堂" 
-}
 
 "#waiHang": {
     latitude: 22.339503,

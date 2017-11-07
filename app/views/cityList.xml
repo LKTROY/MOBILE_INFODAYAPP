@@ -1,0 +1,19 @@
+<Alloy>
+    <Collection src="webNews" />
+	
+    <Window id='win'>
+        <TableView dataFilter="filterFunction" dataCollection="webNews" dataTransform="transformFunction">
+					<TableViewRow layout="vertical">
+						<Label text="{id}" bottom=20 />
+						<Label text="{name}" bottom=20 />
+						<Label text="{class}" bottom=20 />
+						<Label text="{price}" bottom=20 />
+						<Label text="{commment}" bottom=20 />
+						<Label text="{till}" bottom=20 />
+						<buton text="Address" bottom=20 onClick="buttonClick">
+					</TableViewRow>
+				</TableView>
+		
+    </Window> 
+	
+</Alloy>

@@ -7,10 +7,11 @@ exports.definition = {
 			"image":"text",
 			"price":"INTEGER",
 			"class":"text",
-			"comment":"text"
+			"comment":"text",
+			"till":"text"
 		},
 		
-		"URL": "https://api.myjson.com/bins/19rm93", 
+		"URL": "https://api.myjson.com/bins/p1r67", 
 	
 		"adapter" : {
 			"type" : "sqlrest",
